@@ -103,7 +103,7 @@ session_start();
                             <a href="" class="nav-item nav-link">Đăng Kí</a>
                             <?php
                             if(!empty($_SESSION['MaNguoiDung']))
-                            if($_SESSION['TaiKhoan']=='Admin'){
+                             if($_SESSION['Role']==1){
                                 echo '<a href="./Shop/Product/admin.php" class="nav-item nav-link">Quản Lý</a>';
                             }
                             
